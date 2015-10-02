@@ -17,5 +17,6 @@ When asked for the time of the next arrival, a local worker gave me the sense th
 
 “When one comes it comes” he said, nonchalantly and in a quiet nasal tone. “Sofija calls out the numbers, that’s all I need or care for,” he motioned with the rag, still squinting, to a small working hut. “You should ask her.” Despite his casual manner, some malcontent entered the mix as he said that final word.
 
-"How do you find working at Öjnlike depot?" I asked, with my new (unseasoned) journalist hat firmly in place. I eagerly began to pull the notepad from my satchel, but the workman produced a grunt and walked away.
+"How do you find working at Öjnlike depot?" I asked, with my new (unseasoned) journalist hat firmly in place. I eagerly began search for my notepad in my satchel as I spoke, but before I had found the thing the workman had given me such a look of contempt that I understood that was a bad idea. I told him "never mind", and re-buckled the bag.
 
+"Lunchtime" he said at his watch with barely any conviction, stowed his oily rag in his bib pocket, tossed the presumably useless metal component over his shoulder, and moped off.
