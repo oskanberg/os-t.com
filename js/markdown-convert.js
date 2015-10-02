@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-	var articleName = parse('a');
+	var articleName = parse('article');
 	getArticle(articleName, function(mdText) {
 	    var mdTarget = document.getElementById('md-target');
 	    var converter = new showdown.Converter();
@@ -32,7 +32,6 @@ function getArticle(name, callback) {
     xhr.onload = function() {
         var status = xhr.status;
         if (status == 200) {
-            console.log(xhr.response);
             callback(xhr.response);
         }
     };
