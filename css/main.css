@@ -9,10 +9,8 @@ body {
     text-align: center;
 }
 
-.contact-grid {
-    top: 50%;
-    /*position: relative;*/
-    /*transform: translateY(-50%);*/
+.container.main {
+    top: 25%;
 }
 
 .contact-grid .columns {
