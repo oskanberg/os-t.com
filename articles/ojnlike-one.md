@@ -19,4 +19,4 @@ When asked for the time of the next arrival, a local worker gave me the sense th
 
 "How do you find working at Öjnlike depot?" I asked, with my new (unseasoned) journalist hat firmly in place. I eagerly began search for my notepad in my satchel as I spoke, but before I had found the thing the workman had given me such a look of contempt that I understood that was a bad idea. I told him "never mind", and re-buckled the bag.
 
-"Lunchtime" he said at his watch with barely any conviction, stowed his oily rag in his bib pocket, tossed the presumably useless metal component over his shoulder, and moped off.
+"Lunchtime" he said at his watch with barely any conviction, stowed his oily rag in his bib pocket, tossed the presumably unsalvageable metal component over his shoulder, and moped off.
