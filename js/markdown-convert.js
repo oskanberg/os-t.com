@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-	// var pathArray = location.href.split('/')[2];
-	// var protocol = pathArray[0];
-	// var host = pathArray[2];
-	// var url = protocol + '//' + host;
-
-	var articleName = '/articles/' + parse('a') + '.md';
+	var articleName = parse('a');
 	getArticle(articleName, function(mdText) {
 	    var mdTarget = document.getElementById('md-target');
 	    var converter = new showdown.Converter();
@@ -30,6 +25,7 @@ function parse(val) {
 }
 
 function getArticle(name, callback) {
+	var url = '/articles/' + name + '.md';
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.responseType = 'text';
