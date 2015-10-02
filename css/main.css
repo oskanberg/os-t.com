@@ -6,11 +6,19 @@ body {
     /*overflow: hidden;*/
     font-family: 'Fira Sans', sans-serif;
     background-color: #E8EEF4;
+}
+
+.text-center {
     text-align: center;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .container.main {
-    top: 25%;
+    top: 20%;
+    margin-bottom: 20%;
 }
 
 .contact-grid .columns {
@@ -54,4 +62,16 @@ a.icon-circle:hover {
 
 .icon-circle.mail {
     background: #db6b67;
+}
+
+
+
+/* ==== articles ====*/
+
+#md-text {
+    display: none;
+}
+
+#md-text {
+    
 }
