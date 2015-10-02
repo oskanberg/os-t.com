@@ -1,36 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- Basic Page Needs
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Oliver Sk&aring;nberg-Tippen</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Mobile Specific Metas
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- FONT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic,700italic|Fira+Mono:400,700" rel="stylesheet">
-    <!-- JS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="https://rawgit.com/showdownjs/showdown/master/dist/showdown.js"></script>
-    <script type="text/javascript" src="../js/markdown-convert.js"></script>
-    <!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/skeleton.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <!-- Favicon
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-</head>
-
-<body>
-    <div id="md-text">
 
 1. Öjnlike Depot
 ================
@@ -55,22 +22,3 @@ When asked for the time of the next arrival, a local worker seemed to admit that
 
 “When one comes it comes” he said, nonchalantly and in a quiet nasal tone. “Sofija calls out the numbers, that’s all I need or care for,” he motioned with the rag, still squinting, to a small working hut. “You
 should ask her.”
-
-    </div>
-    <!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container main">
-        <div class="row">
-            <div class="twelve columns">
-                <div id="md-target" class="one-half offset-by-three column text-justify">
-                    <!-- article placed here -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Document
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-</body>
-
-</html>
