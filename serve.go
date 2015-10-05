@@ -14,7 +14,7 @@ const MIN_PULL_INTERVAL_MINUTES = 5
 
 var lastGitPull time.Time
 
-func gitPull() {
+func gitPull() error {
 	log.Println("Git Pull")
 
 	cmd := "git"
@@ -23,6 +23,7 @@ func gitPull() {
 	if err := exec.Command(cmd, args...).Run(); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		// os.Exit(1)
+		return err
 	}
 }
 
@@ -33,7 +34,12 @@ func pullHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	lastGitPull = time.Now()
-	gitPull()
+	err := gitPull()
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+	} else {
+		w.WriteHeader(http.StatusOK)
+	}
 }
 
 func main() {
