@@ -25,6 +25,8 @@ func gitPull() error {
 		// os.Exit(1)
 		return err
 	}
+
+	return nil
 }
 
 func pullHandler(w http.ResponseWriter, r *http.Request) {
