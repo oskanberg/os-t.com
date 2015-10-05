@@ -49,12 +49,13 @@ func main() {
 		}
 
 		pullHandler(nil, nil)
-
 		http.HandleFunc("/api/v1/pull", pullHandler)
 	}
 
 	log.Printf("Serving on port %s\n", *port)
-	fs := http.FileServer(http.Dir("public"))
 
-	http.ListenAndServe(":"+*port, fs)
+	fs := http.FileServer(http.Dir("public"))
+	http.Handle("/", fs)
+
+	http.ListenAndServe(":"+*port, nil)
 }
