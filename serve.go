@@ -41,6 +41,9 @@ func main() {
 	bGitPull := flag.Bool("update", false, "Whether or not to accept requests to git pull")
 	flag.Parse()
 
+	fs := http.FileServer(http.Dir("public"))
+	http.Handle("/", fs)
+
 	if *bGitPull {
 		var err error
 		lastGitPull, err = time.Parse(time.RFC3339, "1970-01-01T00:00:00+00:00")
@@ -53,9 +56,5 @@ func main() {
 	}
 
 	log.Printf("Serving on port %s\n", *port)
-
-	fs := http.FileServer(http.Dir("public"))
-	http.Handle("/", fs)
-
 	http.ListenAndServe(":"+*port, nil)
 }
