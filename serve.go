@@ -59,7 +59,7 @@ func main() {
 			return
 		}
 
-		pullHandler(nil, nil)
+		gitPull()
 		http.HandleFunc("/api/v1/pull", pullHandler)
 	}
 
