@@ -10,6 +10,10 @@ import (
 	"time"
 )
 
+const MIN_PULL_INTERVAL_MINUTES = 5
+
+var lastGitPull time.Time
+
 func gitPull() {
 	log.Println("Git Pull")
 
@@ -20,29 +24,37 @@ func gitPull() {
 		fmt.Fprintln(os.Stderr, err)
 		// os.Exit(1)
 	}
+}
 
+func pullHandler(w http.ResponseWriter, r *http.Request) {
+	// don't process if we pulled recently
+	if time.Since(lastGitPull).Minutes() < MIN_PULL_INTERVAL_MINUTES {
+		return
+	}
+
+	lastGitPull = time.Now()
+	gitPull()
 }
 
 func main() {
 	port := flag.String("p", "8080", "The port on which to serve requests.")
-	gitPullInterval := flag.Int("interval", 0, "Number of minutes between Git Pulls (<1 for off)")
+	bGitPull := flag.Bool("update", false, "Whether or not to accept requests to git pull")
 	flag.Parse()
 
-	if *gitPullInterval > 0 {
+	if *bGitPull {
+		var err error
+		lastGitPull, err = time.Parse(time.RFC3339, "1970-01-01T00:00:00+00:00")
+		if err != nil {
+			return
+		}
 
-		gitPull()
+		pullHandler(nil, nil)
 
-		ticker := time.NewTicker(time.Duration(*gitPullInterval) * time.Minute)
-		go func() {
-			for {
-				select {
-				case <-ticker.C:
-					gitPull()
-				}
-			}
-		}()
+		http.HandleFunc("/api/v1/pull", pullHandler)
 	}
 
 	log.Printf("Serving on port %s\n", *port)
-	panic(http.ListenAndServe(":"+*port, http.FileServer(http.Dir("."))))
+	fs := http.FileServer(http.Dir("public"))
+
+	http.ListenAndServe(":"+*port, fs)
 }

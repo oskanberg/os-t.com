@@ -1,0 +1,65 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    /*overflow: hidden;*/
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #E8EEF4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.container.main {
+    top: 20%;
+    margin-bottom: 20%;
+}
+
+.contact-grid .columns {
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: .75rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+a.icon-circle {
+    color: white;
+    font-size: 5em;
+    border-radius: 100%;
+    margin: 0 auto;
+    height: 2.2em;
+    width: 2.2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+a.icon-circle:hover {
+    transform: scale(1.2);
+}
+
+a.icon-circle:hover {
+    color: white;
+}
+
+.icon-circle.twitter {
+    background: #70aecd;
+}
+
+.icon-circle.github {
+    background: grey;
+}
+
+.icon-circle.mail {
+    background: #db6b67;
+}
